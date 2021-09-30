@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 50px;
+  color: black;
+  background-color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+
+  transition: 0.6s;
+}
+
+/* ====================
+          HEADER 
+   ==================== */
+.header {
+  min-height: 85vh;
+  background: rgba(0, 0, 0, 0.5) url("../assets//img/black-cab-header.jpg");
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.top-bar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  font-weight: 400;
+  height: 60px;
+  z-index: 99;
+}
+
+.app-text {
+  padding: 0.7rem;
+  font-weight: bold;
+}
+
+.app-icons {
+  display: flex;
+  flex-direction: row;
+  margin: 0.3rem;
+}
+
+.app-icons img {
+  width: 150px;
+  margin-left: 0.2rem;
+  align-self: center;
+  justify-self: center;
+}
+
+#taxi-app-icon {
+  width: 45px;
+}
+
+.navbar {
+  position: fixed;
+  top: 60px;
+  display: flex;
+  background-color: black;
+  z-index: 99;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 99;
+}
+
+@media screen and (max-width: 980px) {
+  .header {
+    min-height: 70vh;
+    background-attachment: scroll;
+  }
+
+  .app-icons img {
+    width: 125px;
+  }
+
+  #taxi-app-icon {
+    width: 38px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .app-text {
+    font-size: 0.7rem;
+  }
+
+  .app-icons img {
+    width: 90px;
+  }
+
+  #taxi-app-icon {
+    width: 34px;
+  }
+}
+
+/* ====================
+          SERVICE 
+   ==================== */
+
+#service {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+#service h1 {
+  font-size: 3rem;
+  padding: 3rem;
+}
+
+#service span {
+  font-size: 1.2rem;
+}
+
+#service ul {
+  list-style: none;
+}
+
+@media screen and (max-width: 980px) {
+  #service h1 {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+}
+
+/* ====================
+          COVID
+   ==================== */
+
+#covid {
+  min-height: 50vh;
+  background: rgba(0, 0, 0, 0.7) url("../assets/img/covid-world.jpg");
+  background-blend-mode: multiply;
+  background-position: 40% center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#covid h2 {
+  color: white;
+  font-size: 3rem;
+}
+
+#covid p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 550px) {
+  #covid {
+    background-size: cover;
+  }
+  #covid h2 {
+    color: white;
+    font-size: 2rem;
+  }
+  #covid p {
+    text-align: left;
+  }
+}
+
+/* ====================
+          BOOK
+   ==================== */
+
+#book {
+  min-height: 70vh;
+}
+
+#taxi-app-icon {
+  width: 400px;
+}
+
+.app-icons-big img {
+  width: 300px;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 980px) {
+  #taxi-app-icon {
+    width: 300px;
+  }
+
+  .app-icons-big img {
+    width: 200px;
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  #taxi-app-icon {
+    width: 250px;
+  }
+
+  .app-icons-big img {
+    width: 200px;
+    margin: 0.3rem;
+  }
+}
+
+/* ====================
+          THE CAB
+   ==================== */
+#carousel {
+  overflow: visible;
+  background: black;
+}
+
+.carousel-inner {
+  max-height: 50% !important;
+}
+
+#brownriggs {
+  width: 600px;
+}
+
+@media screen and (max-width: 550px) {
+  #brownriggs {
+    width: 300px;
+  }
+}
+
+/* ====================
+        ENQUIRIES
+   ==================== */
+
+form {
+  width: 70vw !important;
+}
+
+.input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-radius: 0 !important;
+}
+
+textarea {
+  resize: none;
+  height: 200px !important;
+}
+
+.submit {
+  width: 70%;
+}
+
+.details {
+  min-height: 50vh;
+  background: rgba(0, 0, 0, 0.8) url("../assets/img/taxi-sign.jpg");
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.details p {
+  font-size: 1.2rem;
+}
+.details a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+}
+
+@media screen and (max-width: 550px) {
+  form {
+    width: 90vw !important;
+  }
+}
